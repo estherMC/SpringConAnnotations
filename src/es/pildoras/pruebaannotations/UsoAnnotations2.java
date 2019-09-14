@@ -30,6 +30,12 @@ public class UsoAnnotations2 {
 		System.out.println(empleado.getTareas());
 		System.out.println(empleado.getInforme());
 
+		//SPRING-16: Pedir bean al contenedor (uso de inyección mediante @Bean) -> necesitamos cambiar el tipo de Empleados a DirectorFinanciero 
+		//por los nuevos campos
+		DirectorFinanciero director = contexto.getBean("directorFinanciero", DirectorFinanciero.class);		
+		System.out.println(director.getEmail());
+		System.out.println(director.getNombreEmpresa());
+
 		
 		//4-Cerrar el contexto
 		contexto.close();  
