@@ -2,6 +2,7 @@ package es.pildoras.pruebaannotations;
 
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
+import es.pildoras.pruebaannotations.Empleados;
 
 //SPRING-12: Creamos clase para ver patrones singleton/prototype con Annotations
 public class UsoAnnotations2 {
